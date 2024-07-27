@@ -1,0 +1,30 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.async-paginate {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.async-paginate__control {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.async-paginate__input {
+    color: #333;
+}
+
+.async-paginate__menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.async-paginate__option {
+    color: #333;
+}

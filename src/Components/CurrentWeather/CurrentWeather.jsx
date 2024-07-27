@@ -1,7 +1,7 @@
 import React from "react";
-import Current from "./Current.css"
+import Current from "./CurrentWeather.css"
 
-const current = ({ data }) => {
+const CurrentWeather = ({ data }) => {
   return (
     <div className="weather">
       <div className="top">
@@ -39,4 +39,4 @@ const current = ({ data }) => {
   );
 };
 
-export default current;
+export default CurrentWeather;
