@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import HomePage from './Components/Homepage/HomePage';
-import TemperatureChartPage from './Components/Chart/TemperatureChartPage';
+import HomePage from './Components/Homepage/HomePage.jsx';
+import TemperatureChartPage from './Components/Chart/TemperatureChartPage.jsx';
 import './App.css'; // Make sure to import the CSS file
 
 const App = () => {
