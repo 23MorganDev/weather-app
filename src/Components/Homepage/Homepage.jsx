@@ -3,17 +3,17 @@ import Search from "../Search/Search";
 import CurrentWeather from "../CurrentWeather/CurrentWeather";
 import ForecastWeather from "../Forecast/ForecastWeather";
 import Geo_location from "../Geo_location/Geo_location";
-import { WEATHER_API_URL, WEATHER_URL_KEY } from "../../api";
+import { WEATHER_API_URL, VITE_WEATHER_URL_KEY } from "../../api";
 
 // Fetching weather data using location
 const fetchWeatherData = async (lat, lon, cityLabel, setCurrentWeather, updateForecastWeather, setForecastWeather) => {
   try {
     const currentWeatherFetch = fetch(
-      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_URL_KEY}&units=metric`
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${VITE_WEATHER_URL_KEY}&units=metric`
     );
 
     const forecastWeatherFetch = fetch(
-      `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_URL_KEY}&units=metric`
+      `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${VITE_WEATHER_URL_KEY}&units=metric`
     );
 
     const [currentWeatherResponse, forecastWeatherResponse] = await Promise.all([currentWeatherFetch, forecastWeatherFetch]);
