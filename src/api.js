@@ -7,5 +7,5 @@ export const geoApiOptions= {
 };
 
 export const GEO_API_URL = import.meta.env.VITE_GEOD_API_URL;
-
+export const VITE_WEATHER_URL_KEY = import.meta.env.VITE_WEATHER_URL_KEY
 export const WEATHER_API_URL = import.meta.env.VITE_WEATHER_API_URL;
